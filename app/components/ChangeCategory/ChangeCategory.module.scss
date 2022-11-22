@@ -1,0 +1,44 @@
+.title {
+  @apply font-semibold text-center text-3xl;
+  color: #eeeeee;
+}
+
+.colorPicker {
+  @apply w-full mx-auto appearance-none rounded-full;
+  border: none;
+  max-width: 3rem;
+  height: 3rem;
+}
+.colorPicker::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+.colorPicker::-webkit-color-swatch {
+  @apply rounded-full;
+  border: none;
+}
+
+.input {
+  @apply text-lg px-4 py-2 rounded-xl;
+  color: var(--input-color);
+  background-color: var(--input);
+  border: 2px solid transparent;
+  &:focus {
+    @apply shadow-2xl;
+    outline: none;
+    border: 2px solid var(--black);
+  }
+}
+
+.button {
+  @apply font-semibold text-lg px-4 py-2 rounded-xl;
+  color: #eeeeee;
+  background-color: #242037;
+  transition: all 500ms cubic-bezier(0.14, 0.65, 0.15, 1);
+  &:hover {
+    background-color: #35304c;
+  }
+  &:disabled {
+    @apply cursor-not-allowed;
+    background-color: #b0b0b0;
+  }
+}

@@ -1,0 +1,36 @@
+.statistics {
+  @apply flex flex-col justify-center;
+}
+
+.clear {
+  @apply flex items-center gap-2 text-xl font-medium bg-blue-500 px-4 py-2 rounded-xl mb-5;
+  color: #e0dcf3;
+  @media (max-width: 425px) {
+    @apply w-full;
+  }
+}
+
+.tabList {
+  @apply grid grid-cols-3 gap-10 mb-5;
+  @media (max-width: 1024px) {
+    @apply grid-cols-2 gap-5;
+  }
+  @media (max-width: 425px) {
+    @apply grid-cols-1;
+  }
+}
+
+.tabPanel {
+  @apply w-full p-5 rounded-xl overflow-y-auto;
+  max-width: 22rem;
+  max-height: 21.875rem;
+  background-color: #3a3553;
+}
+
+.tabPanelItem {
+  @apply p-5 rounded-xl;
+  background-color: #595d84;
+  &:not(:last-child) {
+    @apply mb-5;
+  }
+}

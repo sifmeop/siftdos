@@ -1,0 +1,85 @@
+.todo {
+  @apply p-4 rounded-2xl;
+  background-color: #595d84;
+  &:not(:last-child) {
+    @apply mb-5;
+  }
+}
+
+.todoItem {
+  @apply flex justify-between items-center mb-3;
+}
+
+.title {
+  @apply flex items-center flex-wrap;
+}
+
+.todoIndex {
+  @apply grid place-items-center w-14 h-14 text-3xl font-bold rounded-2xl;
+  color: #eeeeee;
+  background-color: #3a3553;
+  margin-right: -56px;
+  z-index: 1;
+}
+
+.todoTitle {
+  @apply text-2xl font-bold py-2 pr-4 rounded-2xl overflow-x-hidden;
+  padding-left: 65px;
+  word-break: break-word;
+}
+
+.buttons {
+  @apply flex justify-end items-center flex-wrap gap-3 z-10 rounded-xl;
+  transition: bottom 0.7s cubic-bezier(0.14, 0.65, 0.15, 1);
+  > button {
+    @apply p-2 rounded-xl;
+    transition: all 500ms cubic-bezier(0.14, 0.65, 0.15, 1);
+    &:hover {
+      background-color: rgba(37, 37, 37, 0.3);
+    }
+  }
+
+  @media (max-width: 768px) {
+    @apply flex-col;
+  }
+}
+
+.bodyBlock {
+  @apply flex justify-between gap-3 p-5 rounded-2xl;
+  background-color: #3a3553;
+  > input {
+    flex: 0 0 32px;
+  }
+}
+
+.body {
+  @apply text-xl overflow-x-hidden;
+  word-break: break-word;
+}
+
+@media (max-width: 768px) {
+  .title {
+    @apply flex-col items-start;
+  }
+  .todoTitle {
+    @apply w-full pl-4;
+  }
+  .bodyBlock {
+    > input {
+      @apply ml-auto;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .todoItem {
+    @apply flex-col-reverse;
+    align-items: normal;
+  }
+  .bodyBlock {
+    @apply flex-col-reverse;
+  }
+  .buttons {
+    @apply flex-row;
+  }
+}

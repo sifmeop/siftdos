@@ -1,0 +1,18 @@
+.table {
+  @apply block w-full text-2xl border border-black border-separate overflow-x-auto whitespace-nowrap rounded-2xl;
+  color: var(--primary);
+  background-color: #595d84;
+}
+
+.td {
+  @apply p-5 border border-black rounded-2xl;
+  &:first-child {
+    background-color: #3a3553;
+  }
+  &:last-child {
+    @apply w-full;
+  }
+  @media (max-width: 767px) {
+    @apply p-3;
+  }
+}
