@@ -1,13 +1,13 @@
-import { FC } from 'react'
-import styles from './Header.module.scss'
-import Navigation from '../Navigation/Navigation'
 import Image from 'next/image'
+import { FC } from 'react'
 import logo from '../../assets/images/logo.png'
+import Navigation from '../Navigation/Navigation'
+import styles from './Header.module.scss'
 
 const Header: FC = () => {
   return (
     <header className={styles.header}>
-      <h1 className={styles.todos}>TODOS</h1>
+      <h1 className={styles.todos}>siftdos</h1>
       <Image src={logo} alt={'Todos logo'} className={styles.logo} />
       <Navigation />
       <a
