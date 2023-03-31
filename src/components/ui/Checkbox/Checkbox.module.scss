@@ -1,0 +1,21 @@
+.checkbox {
+  @apply relative h-8 w-8 cursor-pointer appearance-none rounded-lg outline-none;
+  border: 3px solid #e0dcf3;
+
+  &.checked {
+    background-color: #e0dcf3;
+  }
+
+  &.checked::before {
+    content: '';
+    @apply absolute h-5 w-7 bg-contain bg-no-repeat text-[#252525];
+    top: 3px;
+    left: -1px;
+    background-image: url('../../../assets/images/checkbox.svg');
+  }
+
+  &:disabled {
+    border-color: #c0c0c0;
+    background-color: #c0c0c0;
+  }
+}

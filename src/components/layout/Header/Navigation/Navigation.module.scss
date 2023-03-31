@@ -1,0 +1,54 @@
+.menu {
+  margin-bottom: auto;
+}
+
+.menuItem:not(:last-child) {
+  margin-bottom: 2.5rem;
+}
+
+.menuLink {
+  @apply flex items-center gap-2 text-3xl font-bold text-[#8984a3] transition-colors;
+  @media (hover: hover) {
+    &:hover {
+      color: #595d84;
+      > svg path {
+        stroke: #595d84;
+      }
+    }
+  }
+}
+
+.active {
+  color: #e0dcf3;
+  > svg path {
+    stroke: #e0dcf3;
+  }
+  &::before {
+    content: '';
+    @apply absolute left-[10px] block h-[1.875rem] w-2 rounded-lg bg-[#7739f9];
+  }
+  @media (hover: hover) {
+    &:hover {
+      color: #e0dcf3;
+      > svg path {
+        stroke: #e0dcf3;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .link {
+    display: none;
+  }
+  .menuLink {
+    @apply rounded-xl p-2;
+    background-color: rgba(167, 162, 193, 0.1);
+  }
+  .active {
+    background-color: rgba(167, 162, 193, 0.5);
+    &::before {
+      display: none;
+    }
+  }
+}

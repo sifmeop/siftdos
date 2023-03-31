@@ -1,8 +1,0 @@
-.item {
-  @apply w-full flex justify-between text-2xl p-5 rounded-xl;
-  color: #ffffff;
-  background-color: #595d84;
-  @media (max-width: 1024px) {
-    @apply text-lg p-3;
-  }
-}

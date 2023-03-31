@@ -1,0 +1,41 @@
+.statistics {
+  @apply flex flex-col justify-center;
+}
+
+.clear {
+  @apply mb-5 flex items-center gap-2 rounded-xl bg-blue-500 px-4 py-2 text-xl font-medium text-[#e0dcf3];
+  @media (max-width: 425px) {
+    width: 100%;
+  }
+}
+
+.tabItem {
+  @apply rounded-xl bg-[#595d84] p-5 text-2xl text-white;
+  @media (max-width: 1024px) {
+    @apply p-3 text-lg;
+  }
+  &Active {
+    background-color: #3a3553;
+  }
+}
+
+.tabList {
+  @apply mb-5 grid grid-cols-3 gap-10;
+  @media (max-width: 1024px) {
+    @apply grid-cols-2 gap-5;
+  }
+  @media (max-width: 425px) {
+    @apply grid-cols-1;
+  }
+}
+
+.tabPanel {
+  @apply max-h-[21.875rem] w-full max-w-[22rem] overflow-y-auto rounded-xl bg-[#3a3553] p-5;
+}
+
+.tabPanelItem {
+  @apply rounded-xl bg-[#595d84] p-5;
+  &:not(:last-child) {
+    margin-bottom: 1.25rem;
+  }
+}

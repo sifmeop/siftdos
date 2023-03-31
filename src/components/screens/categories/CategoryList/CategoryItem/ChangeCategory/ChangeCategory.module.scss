@@ -1,0 +1,30 @@
+.title {
+  @apply mb-3 text-center text-3xl font-semibold text-[#eeeeee];
+}
+
+.colorPicker {
+  @apply mx-auto h-12 w-full max-w-[3rem] appearance-none rounded-full border-none;
+  &::-webkit-color-swatch-wrapper {
+    padding: 0;
+  }
+  &::-webkit-color-swatch {
+    @apply rounded-full border-none;
+  }
+}
+
+.input {
+  @apply rounded-xl border-2 border-transparent bg-[#2a263e] px-4 py-2 text-lg text-[#e0dcf3];
+  &:focus {
+    @apply border-2 border-[#252525] shadow-2xl outline-none;
+  }
+}
+
+.button {
+  @apply rounded-xl bg-[#242037] px-4 py-2 text-lg font-semibold text-[#eeeeee] transition-colors;
+  &:hover {
+    background-color: #35304c;
+  }
+  &:disabled {
+    @apply cursor-not-allowed bg-[#b0b0b0];
+  }
+}

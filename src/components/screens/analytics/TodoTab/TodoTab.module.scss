@@ -1,0 +1,10 @@
+.tab {
+  @apply max-h-[21.875rem] w-full max-w-[22rem] overflow-y-auto rounded-xl bg-[#3a3553] p-5;
+}
+
+.clear {
+  @apply mb-5 flex items-center gap-2 rounded-xl bg-blue-500 px-4 py-2 text-xl font-medium text-[#e0dcf3];
+  @media (max-width: 425px) {
+    width: 100%;
+  }
+}

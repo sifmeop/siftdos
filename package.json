@@ -1,6 +1,6 @@
 {
   "name": "siftdos",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -9,29 +9,32 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@svgr/webpack": "^6.5.1",
+    "@svgr/webpack": "^7.0.0",
+    "@tailwindcss/line-clamp": "^0.4.4",
     "@types/chroma-js": "^2.1.4",
-    "@types/node": "18.11.9",
-    "@types/react": "18.0.25",
-    "@types/react-dom": "18.0.8",
+    "@types/node": "18.15.11",
+    "@types/react": "18.0.31",
+    "@types/react-dom": "18.0.11",
     "@types/react-select": "^5.0.1",
     "chroma-js": "^2.4.2",
-    "eslint": "8.27.0",
-    "eslint-config-next": "13.0.3",
-    "next": "13.0.3",
+    "eslint": "8.37.0",
+    "eslint-config-next": "13.2.4",
+    "next": "13.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.6.0",
     "react-select": "^5.6.1",
-    "react-tabs": "^5.1.0",
+    "react-tabs": "^6.0.0",
     "redux-persist": "^6.0.0",
-    "typescript": "4.8.4"
+    "typescript": "5.0.3"
   },
   "devDependencies": {
     "@reduxjs/toolkit": "^1.9.0",
     "autoprefixer": "^10.4.13",
-    "framer-motion": "^7.6.6",
+    "framer-motion": "^10.10.0",
     "postcss": "^8.4.19",
+    "prettier": "^2.8.7",
+    "prettier-plugin-tailwindcss": "^0.2.6",
     "react-redux": "^8.0.5",
     "sass": "^1.56.1",
     "tailwindcss": "^3.2.4"

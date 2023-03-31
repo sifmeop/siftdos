@@ -1,0 +1,6 @@
+.button {
+  @apply rounded-lg bg-[#453e67] px-8 text-3xl font-semibold text-[#eeeeee] transition-colors hover:bg-[#35304c];
+  &:disabled {
+    @apply cursor-not-allowed bg-[#7f7b92];
+  }
+}

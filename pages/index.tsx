@@ -1,16 +1,13 @@
-import { FC } from 'react'
-import Meta from '../app/utils/Meta'
-import TodoList from '../app/components/TodoList/TodoList'
-import CreateTodo from '../app/components/CreateTodo/CreateTodo'
+import Home from '@/screens/home/Home'
+import Meta from '@/utils/Meta'
 
-const Index: FC = () => {
+const HomePage = () => {
   return (
-    <div>
-      <Meta title={'Home'} description={'On this page you can view and create a todo'} />
-      <CreateTodo />
-      <TodoList />
-    </div>
+    <>
+      <Meta title='Home' description='On this page you can view and create a todo' />
+      <Home />
+    </>
   )
 }
 
-export default Index
+export default HomePage

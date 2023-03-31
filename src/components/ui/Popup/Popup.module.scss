@@ -1,0 +1,15 @@
+.bg {
+  @apply fixed inset-0 z-20;
+  background-color: rgba(42, 38, 62, 0.7);
+}
+
+.popup {
+  @apply fixed left-1/2 top-60 z-20 w-full min-w-[20rem] max-w-xl -translate-x-1/2 rounded-xl bg-[#453e67] px-12 py-6;
+  @media (max-width: 768px) {
+    @apply px-8 py-4;
+  }
+}
+
+.close {
+  @apply mb-3 ml-auto;
+}

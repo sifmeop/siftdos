@@ -1,0 +1,13 @@
+.form {
+  @apply mb-5 flex flex-col items-stretch gap-3 pb-5;
+}
+
+.button {
+  @apply rounded-lg bg-[#453e67] px-4 py-2 text-xl font-semibold text-[#eeeeee] transition-colors;
+  &:hover {
+    background-color: #35304c;
+  }
+  &:disabled {
+    @apply cursor-not-allowed bg-[#7f7b92];
+  }
+}
