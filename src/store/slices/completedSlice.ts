@@ -14,7 +14,10 @@ export const completedSlice = createSlice({
   initialState,
   reducers: {
     completedTodo: (state, action: PayloadAction<Todo>) => {
-      state.completed.push(action.payload)
+      state.completed.push({
+        ...action.payload,
+        isCompleted: true
+      })
     },
     clearCompletedList: (state) => {
       state.completed = []

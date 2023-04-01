@@ -10,7 +10,7 @@
 }
 
 .title {
-  @apply flex flex-wrap items-center line-clamp-1;
+  @apply line-clamp-1 flex flex-wrap items-center;
 }
 
 .todoIndex {
@@ -19,7 +19,7 @@
 }
 
 .todoTitle {
-  @apply overflow-x-hidden rounded-2xl py-1 pl-[4.0625rem] pr-4 text-2xl font-bold line-clamp-1;
+  @apply line-clamp-1 overflow-x-hidden rounded-2xl py-1 pl-[4.0625rem] pr-4 text-2xl font-bold;
   word-break: break-word;
 }
 
@@ -31,10 +31,6 @@
     &:hover {
       background-color: rgba(37, 37, 37, 0.3);
     }
-  }
-
-  @media (max-width: 768px) {
-    flex-direction: column;
   }
 }
 
@@ -51,12 +47,6 @@
 }
 
 @media (max-width: 768px) {
-  .title {
-    @apply flex-col items-start;
-  }
-  .todoTitle {
-    @apply w-full pl-4;
-  }
   .bodyBlock {
     > input {
       margin-left: auto;
@@ -67,12 +57,9 @@
 @media (max-width: 425px) {
   .todoItem {
     flex-direction: column-reverse;
-    // align-items: normal;
+    align-items: normal;
   }
   .bodyBlock {
     flex-direction: column-reverse;
-  }
-  .buttons {
-    flex-direction: row;
   }
 }
